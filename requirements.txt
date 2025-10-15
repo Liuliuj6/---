@@ -1,0 +1,5 @@
+beautifulsoup4>=4.13.4
+pandas>=2.2.3
+requests>=2.32.3
+selenium>=4.35.0
+# 运行时直接运行main.py即可，爬虫实现部分在toutiao_spider.py中。
