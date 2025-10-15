@@ -28,7 +28,7 @@
 
 ## 项目结构
 
-{
+```
 toutiao_crawler/
 ├── settings.py          # 配置文件
 ├── toutiao_spider.py    # 抖音爬虫
@@ -37,7 +37,7 @@ toutiao_crawler/
 ├── main.py                 # 单平台主程序
 ├── requirements.txt        # 依赖包
 └── README.md              # 说明文档
-}
+```
 
 ## 安装配置
 ### 1.环境要求
