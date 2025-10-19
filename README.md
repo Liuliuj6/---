@@ -43,10 +43,15 @@ toutiao_crawler/
 ### 1.环境要求
 Python 3.8+
 网络连接
-### 2.安装依赖
-cd toutiao_crawler
-pip install -r requirements.txt
-(mac:pip3 install -r requirements.txt)
+"""
+
+### 2.头条爬虫系统配置文件
+
+ """
+import os
+from datetime import datetime
+ """
+ 
 ### 3.爬虫配置说明
 
 核心配置项
@@ -55,9 +60,9 @@ pip install -r requirements.txt
 
 keyword：”李雨珊事件”
 位置：search_toutiao()方法参数
-max_pages：最大爬取页数
+max_pages：50， #最大爬取页数
 page_num：当前页码（从0开始）
-延迟策略：delay_range=(3,6)秒随机间隔
+延迟策略：delay_range=(2,5)秒随机间隔
 超时设置：timeout=30秒（网络请求）
 
 反爬虫策略
@@ -68,7 +73,7 @@ page_num：当前页码（从0开始）
 
 数据处理
 
-批量插入：batch_size=50条/批次
+批量插入：batch_size=100， #批量插入数据库大小 
 数据字段：包含内容、用户、时间、互动数据等18个字段
 图片处理：自动提取pic_urls并计数
 
